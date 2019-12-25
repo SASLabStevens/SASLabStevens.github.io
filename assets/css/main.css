@@ -1620,7 +1620,61 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+		
 
+
+.profile-image {
+
+  width: 200px;
+  height: 200px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 540px;
+  text-align:center;
+}
+.profile-image img {
+  width: 110%;
+
+}
+
+.profile-st-image {
+
+  width: 180px;
+  height: 180px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 150;
+  text-align:center;
+}
+.profile-st-image img {
+  width: 80%;
+  height: auto;
+
+}
+
+.profile-st2-image {
+
+  width: 180px;
+  height: 180px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 150;
+  text-align:center;
+}
+.profile-st2-image img {
+  width: 100%;
+  height: auto;
+
+}
 /* Button */
 
 	input[type="button"],
@@ -1826,7 +1880,7 @@ input, select, textarea {
 /* Feature List */
 
 	.feature-list {
-		max-width: 58em;
+		max-width: 98em;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
