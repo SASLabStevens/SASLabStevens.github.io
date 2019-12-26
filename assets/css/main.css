@@ -1637,7 +1637,7 @@ input, select, textarea {
 }
 .profile-image img {
   width: 110%;
-
+  height: auto;
 }
 
 .profile-st-image {
