@@ -1,201 +1,283 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Safe Autonomous Systems Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="zxx">
 
-			<!-- Header -->
-				<section id="header" class="wrapper">
+<head>
+  <meta charset="utf-8">
+  <title>SAS Lab</title>
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1><a href="index.html">Safe Autonomous Systems Lab</a></h1>
-							<p>Stevens Institute of Technology</p>
-						</div>
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="people.html">People</a></li>
-								<li class="current"><a href="research.html">Research</a></li>
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="news.html">News</a></li>
-							</ul>
-						</nav>
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
 
-				</section>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-						<!-- Main -->
-				<div id="main" class="wrapper style2">
-					<div class="title">Research</div>
-					<div class="container">
+  <!--Favicon-->
+  <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+  <!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
 
-						<!-- Content -->
-							<div id="content">
-							<!-- Lab env -->
-								<article class="box post">
-									<a href="#labenv" class="image featured">
-										<img src="images/labenvironment.JPG" alt="Lab Environment" />
-									</a>
-	
-								</article>
-								<!-- research -->
-								<article class="box post">
-									<header class="style1">
-										<h2>Safe Autonomy: Novel Autopilot Controllers for Improved Safety of Autonomous Systems</h2>
-									</header>
-									<p align="justify">Our current effort addresses UAV emergency landing under system
-									failures/attacks and other environmental uncertainties such as severe weather condition
-									using a Multi-Level Adaptation approach. This is a milestone in a novel autopilot framework,
-									which enables a UAV under large uncertainties to perform safety maneuvers that are traditionally
-									reserved for human pilots with sufficient experience. From a mission control perspective,
-									the framework replaces the traditional top-down, one-way adaptation between mission planning,
-									trajectory generation, tracking and stabilizing controller, with a two-way adaptation between 
-									planning and control to improve the stability and robustness of the system. </p>
-									<a href="#resrch" class="image featured">
-										<img src="images/resrch.JPG" alt="Lab Environment"/>
-									</a>
-									<p align="justify">(Left) Multi-Level Adaptation Autopilot Framework. To address the emergencies due to attacks/failures, adaptation in high-level missions, local goals, and low-level control tasks (multi-level adaptation) is required. (Right) Automatic emergency landing trajectories under engine fail implemented on a high-fidelity flight simulator.</p>								
-		
-								</article>
-								
-								<article class="box post">
-									<header class="style1">
-										<h2>Lab Environment</h2>
-									</header>
-									<p align="justify">The lab includes an indoor flight arena equipped with VICON motion capture camera system and off-board computing workstations for design, test, and verification using aerial and ground robots. The aerial platforms available for testing and implementation include Crazyflie 2.1 nano-copters, Parrot A.R. drones, and heavy-duty DJI M600 hexacopter with a maximum payload capacity of 6kg for outdoor tests.</p>
-									<a href="#env_equip" class="image featured">
-										<img src="images/env_equip.png" alt="Lab Equipment"/>
-									</a>
-									<p align="justify">(Left) A rendering of the interior space of the Safe Autonomous Systems Lab that is currently under construction. (Right) DJI M600 Hexacopter with a maximum payload capacity of 6 kg.</p>
-								</article>
-								
-								<!-- media1 -->
-								<article align="center" class="box post">
-									<header class="style1">
-										<h2>Media</h2>
-									</header>
-								</article>
-										
-									</article>
-									<h2>Multi-Level Adaption Autopilot Framework for Engine-Out Landing Under Weather Uncertainties</h2>
-									
-									<div align="center">
+</head>
 
-									<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qLSd5OkN2nQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										
-									</div>
-																	
-								<p align="justify">This simulation presents engine-out automatic landing under severe weather using a Multi-Level Adaptation approach.
-								This is a milestone in a novel autopilot framework, which enables an autonomous aircraft under large uncertainties
-								to perform safety maneuvers that are traditionally reserved for human pilots with sufficient experience. 
-								We use X-Plane 11 high-fidelity flight simulator to test and validate the solution.</p>
-								</br>
-							
-								<!-- media2 -->
-								
-									<h2>Stealthy Zero-Dynamics Actuator Attack Against Sampled-Data Cyber-Physical Systems</h2>
-																																		
-									
-									<div align="center">
-										<iframe width="560" height="315" align="" src="https://www.youtube-nocookie.com/embed/rqE9lewmRTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									
-								</div>
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <!-- <img src="images/preloader.gif" alt="preloader"> -->
+  </div>
+  <!-- preloader end -->
 
-								<p align="justify">In this video, stealthy zero-dynamics attack is introduced. The video shows the trajectory tracking
-								control of a quadrotor subject to zero-dynamics attack. Using a multirate adaptive controller, these attacks can be detected.</p>
-								
-								
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+        <a class="navbar-brand" href="index.html"> SAFE AUTONOMOUS SYSTEMS LAB </a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item @@people">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item @@publication">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item @@news">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item @@equipment">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item @@opening">
+              <a class="nav-link" href="opening.html">Opening</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Research in SAS lab</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Our research addresses resilient and secure control of intelligent autonomous systems in uncertain and adversarial environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"> -->
+        <!-- <img class="img-fluid w-100 mb-4" src="images/about/labenvironment.jpg" alt="about image"> -->
+        <!-- <h2 class="section-title">Safe Autonomy: Novel Autopilot Controllers for Improved Safety of Autonomous Systems</h2> -->
+        <!-- <p style="text-align: justify;">Our current effort addresses UAV emergency landing under system failures/attacks and other environmental uncertainties such as severe weather condition using a Multi-Level Adaptation approach. This is a milestone in a novel autopilot framework, which enables a UAV under large uncertainties to perform safety maneuvers that are traditionally reserved for human pilots with sufficient experience. From a mission control perspective, the framework replaces the traditional top-down, one-way adaptation between mission planning, trajectory generation, tracking and stabilizing controller, with a two-way adaptation between planning and control to improve the stability and robustness of the system.</p> -->
+        <!-- <img class="img-fluid w-100 mb-4" src="images/research/resrch.JPG" alt="about image">
+        <p align="justify">(Left) Multi-Level Adaptation Autopilot Framework. To address the emergencies due to attacks/failures, adaptation in high-level missions, local goals, and low-level control tasks (multi-level adaptation) is required. (Right) Automatic emergency landing trajectories under engine fail implemented on a high-fidelity flight simulator.</p> -->
+<!--       </div>
+    </div>
+  </div>
+</section> -->
+<!-- /about -->
+
+<!-- media -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title mb-50">Research Projects</h2>
+    <div class="row align-items-top">
+      <div class="col-md-6 order-2 order-md-1">
+        <!-- <h2 class="section-title">Research Projects</h2> -->
+        <h4 class="section-title">Safe Autonomy: Novel Autopilot Controllers for Improved Safety of Autonomous Systems</h4>
+        <p style="text-align: justify;">This simulation presents engine-out automatic landing under severe weather using a Multi-Level Adaptation approach. This is a milestone in a novel autopilot framework, which enables an autonomous aircraft under large uncertainties to perform safety maneuvers that are traditionally reserved for human pilots with sufficient experience. We use X-Plane 11 high-fidelity flight simulator to test and validate the solution.
+        </p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-50 mb-md-10">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qLSd5OkN2nQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+          <div class="col-12 order-3">
+        <img class="img-fluid w-100 mb-4" src="images/research/resrch.JPG" alt="about image">
+        <p align="justify">(Left) Multi-Level Adaptation Autopilot Framework. To address the emergencies due to attacks/failures, adaptation in high-level missions, local goals, and low-level control tasks (multi-level adaptation) is required. (Right) Automatic emergency landing trajectories under engine fail implemented on a high-fidelity flight simulator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" style="margin-top: -80px">
+  <div class="container">
+    <!-- <h2 class="section-title mb-50">Research Projects</h2> -->
+    <div class="row align-items-top">
+      <div class="col-md-6 order-2 order-md-1">
+        <!-- <h2 class="section-title">Research Projects</h2> -->
+        <h4 class="section-title">Stealthy Zero-Dynamics Actuator Attack Against Sampled-Data Cyber-Physical Systems</h4>
+        <p style="text-align: justify;">In this video, stealthy zero-dynamics attack is introduced. The video shows the trajectory tracking control of a quadrotor subject to zero-dynamics attack. Using a multirate adaptive controller, these attacks can be detected.
+        </p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <iframe width="560" height="315" align="" src="https://www.youtube-nocookie.com/embed/rqE9lewmRTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /media -->
+
+<!-- research projects-->
+<!-- <section class="section" style="margin-top: -80px">
+  <div class="container">
+    <div class="row"> -->
+      <!-- <h2 class="section-title col-lg-12 mb-5">Research Projects</h2> -->
+      <!-- recharch item -->
+      <!-- <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-1.jpg" alt="research thumb">
+          <div class="card-body">
+            <h4 class="card-title">Cyber-Physical Security</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title
+              and make up the bulk of the card's content.
+            </p>
+            <a href="research.html" class="btn btn-primary-outline">Read more</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- recharch item -->
+<!--       <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-2.jpg" alt="research thumb">
+          <div class="card-body">
+            <h4 class="card-title">Planning and Control</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title
+              and make up the bulk of the card's content.
+            </p>
+            <a href="research.html" class="btn btn-primary-outline">Read more</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- recharch item -->
+<!--       <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-3.jpg" alt="research thumb">
+          <div class="card-body">
+            <h4 class="card-title">Safe Autonomy</h4>
+            <p class="card-text">
+              Some quick example text to build on the card title
+              and make up the bulk of the card's content.
+            </p>
+            <a href="research.html" class="btn btn-primary-outline">Read more</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- recharch item -->
+      <!-- recharch item -->
+      <!-- recharch item -->
+
+      <!-- end of research items -->
+<!--     </div>
+  </div>
+</section> -->
+<!-- /research  projects-->
 
 
-							</div>
 
-					</div>
-				</div>
-			
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
 
-<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">Contact</div>
-					<div class="container">
-						<div class="row">
-					<div class="col-6 col-12-medium">
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 text-sm-left text-center">
+          <p class="mb-0">Copyright © 2019 -
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+             Hamidreza Jafarnejadsani.</p>
+             <p>All rights reserved.</p>
+             <p> Design: <a class="" href="https://themefisher.com/" target="_blank">themefisher</a></p>
+        </div>
+        <!-- <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0"> -->
+        <div class="col-sm-4 text-sm-left text-center">
+          <ul class="list-unstyled">
+            <li class="mb-1">Carnegie Laboratory, Room 107</li>
+            <li class="mb-1">519 Hudson St.</li>
+            <li class="mb-1">Hoboken, NJ 07030</li>
+            <li class="mb-1">(201) 216-5563</li>
+            <li class="mb-2">hjafarne [at] stevens [dot] edu</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 text-sm-right text-center"> 
+          <ul class="list-inline">
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li> -->
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://github.com/SASLabStevens" target="_blank"><i class="ti-github text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.youtube.com/channel/UC5wWa4r58r1dMlbTwYGo9Mg" target="_blank"><i class="ti-youtube text-primary"></i></a></li>
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
 
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														hjafarne [at] stevens [dot] edu
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
-													<p>
-														(201) 216-5563
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-							</div>
-							<div class="col-6 col-12-medium">
+<!-- Main Script -->
+<script src="js/script.js"></script>
 
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Mailing Address</h3>
-													<p>
-                                                        1 Castle Point Terrace<br />
-														Hoboken, NJ 07030
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
-													<p>
-														<a href="https://github.com/SASLabStevens">GitHub</a><br />
-														<a href="https://www.youtube.com/channel/UC5wWa4r58r1dMlbTwYGo9Mg">YouTube</a><br />
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; 2019 by Hamidreza Jafarnejadsani. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>

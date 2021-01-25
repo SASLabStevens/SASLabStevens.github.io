@@ -1,219 +1,298 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Safe Autonomous Systems Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="zxx">
 
-			<!-- Header -->
-				<section id="header" class="wrapper">
+<head>
+  <meta charset="utf-8">
+  <title>SAS Lab</title>
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1><a href="index.html">Safe Autonomous Systems Lab</a></h1>
-							<p>Stevens Institute of Technology</p>
-						</div>
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="people.html">People</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li class="current"><a href="publications.html">Publications</a></li>
-								<li><a href="news.html">News</a></li>
-							</ul>
-						</nav>
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
 
-				</section>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-			<!-- Main -->
-				<section id="main" class="wrapper style2">
-					<div class="title">Publications</div>
+  <link rel="stylesheet" href="css/academicons.min.css"/>
+  <!--Favicon-->
+  <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+  <!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
 
-					<div class="container">
-						<!-- <p class="style3" align="left"> </p> -->
-					
-						<header class="style1">
-										<h2>Journal Papers</h2>
-						</header>
-						
-						 <p><b>[J1] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan.
-                                   "L1 Adaptive Sampled-Data Control for Uncertain Multi-Input Multi-Output Systems", Automatica, vol. 103, pp. 346-353, 2019.
-                                   <a class="mag" href="https://doi.org/10.1016/j.automatica.2019.01.007"><b>[Link]</b></a>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <!-- <img src="images/preloader.gif" alt="preloader"> -->
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+        <a class="navbar-brand" href="index.html"> SAFE AUTONOMOUS SYSTEMS LAB </a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@reaserch">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item @@people">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item @@news">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item @@equipment">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item @@opening">
+              <a class="nav-link" href="opening.html">Opening</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.html">Publications</a></li>
+          <li class="list-inline-item text-white h3 font-secondary "></li>
+        </ul>
+        <!-- <p class="text-lighten">Our publications ...</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- Journal -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-12">
+        <h2 class="section-title">Journal Papers</h2>
+      </div>
+<!-- <ul class="row" style="list-style: disc; line-height:200%">
+  <li>H. Jafarnejadsani, H. Lee, and N. Hovakimyan.
+              <b>L1 Adaptive Sampled-Data Control for Uncertain Multi-Input Multi-Output Systems</b>, Automatica, vol. 103, pp. 346-353, 2019.<a class="mag" href="https://doi.org/10.1016/j.automatica.2019.01.007"><b>[Link]</b></a>
+  </li>
+  <li>Y. Mao, H. Jafarnejadsani, P. Zhao, E. Akyol, and N. Hovakimyan.
+        <b>Novel Stealthy Attack and Defense Strategies for Networked Control Systems</b>, IEEE Transactions on Automatic Control, 2019 (under review).
+        <a class="mag" href="https://arxiv.org/pdf/1908.09466.pdf"><b>[Link]</b></a>
+  </li>
+  <li>D. Sun, H. Jafarnejadsani, and N. Hovakimyan.
+      <b>Design of Command Limiting Control Law using Exponential Potential Functions</b>, Journal of Guidance, Control, and Dynamics, 2019 (under review).
+  </li>
+  <li>
+    H. Jafarnejadsani, N. Wan, N. Hovakimyan, and P. G. Voulgaris. 
+     <b>A Multi-Level Sampled-Data Approach for Resilient Navigation and Control of Autonomous Systems</b>, International Journal of Robust and Nonlinear Control, 2019. 
+    <a class="mag" href=" https://doi.org/10.1002/rnc.4814"><b>[Link]</b></a>
+  </li>
+  <li>
+    H. Jafarnejadsani, D. Sun, H. Lee, and N. Hovakimyan.
+      <b>Optimized L1 Adaptive Controller for Trajectory Tracking of an Indoor Quadrotor</b>, Journal of Guidance, Control, and Dynamics, pp. 1415-1427, 2017. 
+       <a class="mag" href="https://doi.org/10.2514/1.G000566"><b>[Link]</b></a>
+  </li>
+  <li>
+    
+  </li>
+
+</ul> -->
+
+<p><b>[J7] </b> D. Sun, H. Jafarnejadsani, and N. Hovakimyan.
+             <b>Design of Command Limiting Control Law using Exponential Potential Functions</b>, Journal of Guidance, Control, and Dynamics, 2020. <a class="mag" href="https://arc.aiaa.org/doi/full/10.2514/1.G004972"><b>[Link]</b></a>
+           </p>
+
+   <p><b>[J6] </b> Y. Mao, H. Jafarnejadsani, P. Zhao, E. Akyol, and N. Hovakimyan.
+                <b>Novel Stealthy Attack and Defense Strategies for Networked Control Systems</b>, IEEE Transactions on Automatic Control, 2020.
+                <a class="mag" href="https://ieeexplore.ieee.org/abstract/document/9099503?casa_token=us8TOPuSPDoAAAAA:miXS7BTTHN30WISGjU9uo5dFU7aMYhsZDq19OZK-EbjiFnQ6NEwPZB1lAIFTAJ31dlRS69E"><b>[Link]</b></a>
+            </p>
+
+    <p><b>[J5] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan.
+              <b>L1 Adaptive Sampled-Data Control for Uncertain Multi-Input Multi-Output Systems</b>, Automatica, vol. 103, pp. 346-353, 2019.<a class="mag" href="https://doi.org/10.1016/j.automatica.2019.01.007"><b>[Link]</b></a>
                                    </p>
-				                 <p><b>[J2] </b> Y. Mao, H. Jafarnejadsani, P. Zhao, E. Akyol, and N. Hovakimyan.
-                                   "Novel Stealthy Attack and Defense Strategies for Networked Control Systems", IEEE Transactions on Automatic Control, 2019 (under review).
-                                   <a class="mag" href="https://arxiv.org/pdf/1908.09466.pdf"><b>[Link]</b></a>
-                                   </p>
-						
-						<p><b>[J3] </b> D. Sun, H. Jafarnejadsani, and N. Hovakimyan.
-                                   "Design of Command Limiting Control Law using Exponential Potential Functions", Journal of Guidance, Control, and Dynamics, 2019 (under review).
-                                   </p>
-						
-						<p><b>[J4] </b> H. Jafarnejadsani, N. Wan, N. Hovakimyan, and P. G. Voulgaris. 
-                                   "A Multi-Level Sampled-Data Approach for Resilient Navigation and Control of Autonomous Systems", International Journal of Robust and Nonlinear Control, 2019. 
+            
+            <p><b>[J4] </b> H. Jafarnejadsani, N. Wan, N. Hovakimyan, and P. G. Voulgaris. 
+                                   <b>A Multi-Level Sampled-Data Approach for Resilient Navigation and Control of Autonomous Systems</b>, International Journal of Robust and Nonlinear Control, 2019. 
                                    <a class="mag" href=" https://doi.org/10.1002/rnc.4814"><b>[Link]</b></a>
                                    </p>
-						
-						<p><b>[J5] </b> H. Jafarnejadsani, D. Sun, H. Lee, and N. Hovakimyan.
-                                   "Optimized L1 Adaptive Controller for Trajectory Tracking of an Indoor Quadrotor", Journal of Guidance, Control, and Dynamics, pp. 1415-1427, 2017. 
+            
+            <p><b>[J3] </b> H. Jafarnejadsani, D. Sun, H. Lee, and N. Hovakimyan.
+                                   <b>Optimized L1 Adaptive Controller for Trajectory Tracking of an Indoor Quadrotor</b>, Journal of Guidance, Control, and Dynamics, pp. 1415-1427, 2017. 
                                    <a class="mag" href="https://doi.org/10.2514/1.G000566"><b>[Link]</b></a>
-							
-						<p><b>[J6] </b> H. Jafarnejadsani, J. Pieper.
-                                   "Gain-Scheduled l1-Optimal Control of Variable-Speed Variable-Pitch Wind Turbines", IEEE Transactions on Control Systems Technology, vol.23, no.1, 372-379, 2015. 
+              
+            <p><b>[J2] </b> H. Jafarnejadsani, J. Pieper.
+                                   <b>Gain-Scheduled l1-Optimal Control of Variable-Speed Variable-Pitch Wind Turbines</b>, IEEE Transactions on Control Systems Technology, vol.23, no.1, 372-379, 2015. 
                                    <a class="mag" href="https://doi.org/10.1109/TCST.2014.2320675"><b>[Link]</b></a>
                                    </p>
-						<p><b>[J7] </b> H. Jafarnejadsani, J. Pieper, and J. Ehlers.
-                                   "Adaptive Control of a Variable-Speed Variable-Pitch Wind Turbine using Radial-Basis Function Neural Network", IEEE Transactions on Control Systems Technology, vol.21, no. 6, 2264-2272, 2013. 
+            <p><b>[J1] </b> H. Jafarnejadsani, J. Pieper, and J. Ehlers.
+                                   <b>Adaptive Control of a Variable-Speed Variable-Pitch Wind Turbine using Radial-Basis Function Neural Network</b>, IEEE Transactions on Control Systems Technology, vol.21, no. 6, 2264-2272, 2013. 
                                    <a class="mag" href="https://doi.org/10.1109/TCST.2012.2237518"><b>[Link]</b></a>
-                                   </p>
-					
+                                   </p>        
+
+    </div>
+  </div>
+</section>
+<!-- /Journal -->
 
 
-                               		<hr>
+<!-- Conference -->
+<section class="section" style="margin-top: -100px">
+  <div class="container">
+    <div class="row align-items-center">
 
-						<header class="style1">
-										<h2>Conference Papers</h2>
-						</header>
-
-						 <p><b>[C1] </b> Y. Mao, H. Jafarnejadsani, P. Zhao, E. Akyol, and N. Hovakimyan. 
-                                   "Detectability of Intermittent Zero-Dynamics Attack in Networked Control Systems", IEEE Conference on Decision and Control, Nice, France, December 2019.
+      <div class="col-md-12">
+        <h2 class="section-title">Conference Papers</h2>
+      </div>
+    <!--   <ul> -->
+            <p><b>[C10] </b> Y. Mao, H. Jafarnejadsani, P. Zhao, E. Akyol, and N. Hovakimyan. 
+                                   <b>Detectability of Intermittent Zero-Dynamics Attack in Networked Control Systems</b>, IEEE Conference on Decision and Control, Nice, France, December 2019.
                                    <a class="mag" href="https://arxiv.org/pdf/1909.06938.pdf "><b>[Link]</b></a>
                                    </p>
-						<p><b>[C2] </b> X. Fang, N. Wan, H. Jafarnejadsani, D. Sun, F. Holzapfel, and N. Hovakimyan. 
-                                   "Emergency Landing Trajectory Optimization for Fixed-Wing Delivery UAV under Engine Failure", AIAA Science and Technology Forum and Exposition, San Diego, California, January 2019.
+            <p><b>[C9] </b> X. Fang, N. Wan, H. Jafarnejadsani, D. Sun, F. Holzapfel, and N. Hovakimyan. 
+                                   <b>Emergency Landing Trajectory Optimization for Fixed-Wing Delivery UAV under Engine Failure</b>, AIAA Science and Technology Forum and Exposition, San Diego, California, January 2019.
                                    <a class="mag" href="https://doi.org/10.2514/6.2019-0959"><b>[Link]</b></a>
                                    </p>
-						<p><b>[C3] </b> H. Jafarnejadsani, H. Lee, N. Hovakimyan, and P. G. Voulgaris.  
-                                   "A Multirate Adaptive Control for MIMO Systems with Application to Cyber-Physical Security", IEEE Conference on Decision and Control, Miami, Florida, December 2018.
+            <p><b>[C8] </b> H. Jafarnejadsani, H. Lee, N. Hovakimyan, and P. G. Voulgaris.  
+                                   <b>A Multirate Adaptive Control for MIMO Systems with Application to Cyber-Physical Security</b>, IEEE Conference on Decision and Control, Miami, Florida, December 2018.
                                    <a class="mag" href="https://doi.org/10.1109/CDC.2018.8619570"><b>[Link]</b></a>
                                    </p>
-						<p><b>[C4] </b> H. Jafarnejadsani, J. Kim, N. Hovakimyan, and V. Kulkarni. 
-                                   "Load Capacity Improvements in Nucleic Acid Based Systems using Discrete-Time Feedback Control", 5th International Conference on Control, Decision and Information Technologies, Thessaloniki, Greece, April 2018.
+            <p><b>[C7] </b> H. Jafarnejadsani, J. Kim, N. Hovakimyan, and V. Kulkarni. 
+                                   <b>Load Capacity Improvements in Nucleic Acid Based Systems using Discrete-Time Feedback Control</b>, 5th International Conference on Control, Decision and Information Technologies, Thessaloniki, Greece, April 2018.
                                    <a class="mag" href="https://doi.org/10.1109/CoDIT.2018.8394784 "><b>[Link]</b></a>
                                    </p>
-						<p><b>[C5] </b> H. Jafarnejadsani, H. Lee, N. Hovakimyan, and P. G. Voulgaris. 
-                                   "Dual-Rate L1 Adaptive Controller for Cyber-Physical Sampled-Data Systems", IEEE Conference on Decision and Control, Melbourne, Australia, December 2017. 
+            <p><b>[C6] </b> H. Jafarnejadsani, H. Lee, N. Hovakimyan, and P. G. Voulgaris. 
+                                   <b>Dual-Rate L1 Adaptive Controller for Cyber-Physical Sampled-Data Systems</b>, IEEE Conference on Decision and Control, Melbourne, Australia, December 2017. 
                                    <a class="mag" href="https://doi.org/10.1109/CDC.2017.8264602"><b>[Link]</b></a>
                                    </p>
-						<p><b>[C6] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan.  
-                                   "An L1 Adaptive Control Design for Output-Feedback Sampled-Data Systems", American Control Conference, pp. 5744-5749, Seattle, Washington, May 2017.
+            <p><b>[C5] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan.  
+                                   <b>An L1 Adaptive Control Design for Output-Feedback Sampled-Data Systems</b>, American Control Conference, pp. 5744-5749, Seattle, Washington, May 2017.
                                    <a class="mag" href="https://doi.org/10.23919/ACC.2017.7963850 "><b>[Link]</b></a>
                                    </p>
-						<p><b>[C7] </b> D. Sun, X. Li, H. Jafarnejadsani, and N. Hovakimyan.  
-                                   "A Flight Envelope Protection Method Based on Potential Functions", AIAA Guidance, Navigation, and Control Conference, Grapevine, TX, 2017. 
+            <p><b>[C4] </b> D. Sun, X. Li, H. Jafarnejadsani, and N. Hovakimyan.  
+                                   <b>A Flight Envelope Protection Method Based on Potential Functions</b>, AIAA Guidance, Navigation, and Control Conference, Grapevine, TX, 2017. 
                                    <a class="mag" href="https://doi.org/10.2514/6.2017-1024"><b>[Link]</b></a>
                                    </p>
-						<p><b>[C8] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan. 
-                                   "Convex Multi-Objective Filter Optimization for L1 Adaptive Output-Feedback Control", AIAA Guidance, Navigation, and Control Conference, San Diego, CA, 2016.
+            <p><b>[C3] </b> H. Jafarnejadsani, H. Lee, and N. Hovakimyan. 
+                                   <b>Convex Multi-Objective Filter Optimization for L1 Adaptive Output-Feedback Control</b>, AIAA Guidance, Navigation, and Control Conference, San Diego, CA, 2016.
                                    <a class="mag" href="https://doi.org/10.2514/6.2016-1375 "><b>[Link]</b></a>
                                    </p>
-						<p><b>[C9] </b> H. Jafarnejadsani, and N. Hovakimyan.
-                                   "Optimal Filter Design for a Discrete-Time Formulation of L1 Adaptive Control", AIAA InfoTech @ Aerospace Conference, Kissimmee, FL, 2015.
+            <p><b>[C2] </b> H. Jafarnejadsani, and N. Hovakimyan.
+                                   <b>Optimal Filter Design for a Discrete-Time Formulation of L1 Adaptive Control</b>, AIAA InfoTech @ Aerospace Conference, Kissimmee, FL, 2015.
                                    <a class="mag" href="https://doi.org/10.2514/6.2015-0119"><b>[Link]</b></a>
                                    </p>
-						<p><b>[C10] </b> H. Jafarnejadsani, J. Pieper, and J. Ehlers. 
-                                   "Adaptive Control of a Variable-Speed Variable-Pitch Wind Turbine using RBF Neural Network", IEEE Electrical Power and Energy Conference, London, Ontario, Canada, 2012.
+            <p><b>[C1] </b> H. Jafarnejadsani, J. Pieper, and J. Ehlers. 
+                                   <b>Adaptive Control of a Variable-Speed Variable-Pitch Wind Turbine using RBF Neural Network</b>, IEEE Electrical Power and Energy Conference, London, Ontario, Canada, 2012.
                                    <a class="mag" href="https://doi.org/10.1109/EPEC.2012.6474954"><b>[Link]</b></a>
-                                   </p>
-						
-                               		<hr>
-					</div>
+                                   </p>       
 
-					</section>
-					<!-- <header class="style1">
-						<h2>Our research addresses resilient and secure control of intelligent autonomous<br class="mobile-hide" />
-							systems in uncertain and adversarial environments.</h2>
-					</header> -->
-					
-			<!-- Image -->
-							<!-- <a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
-							</a> -->
-			<!-- Highlights -->
-			
+    </div>
+  </div>
+</section>
+<!-- /Conference -->
 
-	<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">Contact</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-6 col-12-medium">
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
 
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														hjafarne [at] stevens [dot] edu
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
-													<p>
-														(201) 216-5563
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 text-sm-left text-center">
+          <p class="mb-0">Copyright © 2019 -
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+             Hamidreza Jafarnejadsani.</p>
+             <p>All rights reserved.</p>
+             <p> Design: <a class="" href="https://themefisher.com/" target="_blank">themefisher</a></p>
+        </div>
+        <!-- <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0"> -->
+        <div class="col-sm-4 text-sm-left text-center">
+          <ul class="list-unstyled">
+            <li class="mb-1">Carnegie Laboratory, Room 107</li>
+            <li class="mb-1">519 Hudson St.</li>
+            <li class="mb-1">Hoboken, NJ 07030</li>
+            <li class="mb-1">(201) 216-5563</li>
+            <li class="mb-2">hjafarne [at] stevens [dot] edu</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 text-sm-right text-center"> 
+          <ul class="list-inline">
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li> -->
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://github.com/SASLabStevens" target="_blank"><i class="ti-github text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.youtube.com/channel/UC5wWa4r58r1dMlbTwYGo9Mg" target="_blank"><i class="ti-youtube text-primary"></i></a></li>
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
 
-							</div>
-							<div class="col-6 col-12-medium">
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Mailing Address</h3>
-													<p>
-                                                        1 Castle Point Terrace<br />
-														Hoboken, NJ 07030
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
-													<p>
-														<a href="https://github.com/SASLabStevens">GitHub</a><br />
-														<a href="https://www.youtube.com/channel/UC5wWa4r58r1dMlbTwYGo9Mg">YouTube</a><br />
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
+<!-- Main Script -->
+<script src="js/script.js"></script>
 
-							</div>
-						</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; 2019 by Hamidreza Jafarnejadsani. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
