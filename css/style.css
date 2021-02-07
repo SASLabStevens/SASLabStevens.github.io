@@ -355,7 +355,7 @@ a h4:hover {
   top: 0;
   left: 0;
   background: #4a81c4;  /*182b45 */
-  opacity: .4;
+  opacity: .3;
 }
 
 .overlay::before {
@@ -406,7 +406,7 @@ a h4:hover {
 }
 
 .text-muted {
-  color: #cceeff !important; /* #b5b5b7 */
+  color: #FFFFDF !important; /* #b5b5b7 OR cceeff*/
 }
 
 .text-dark {
@@ -1029,6 +1029,7 @@ link:focus,
   animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: visible; /*# hidden */
   background-size: cover;
+  /* background-color: rgba(201, 76, 76, 0.3):  */
   /* background: #4a81c4 ;  */
   background-position: center center;
   color: transparent;
@@ -1038,11 +1039,12 @@ link:focus,
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .crossfade > figure:nth-child(1) {
   background-image: url('../images/slideshow/banner.jpg');
+
 }
 .crossfade > figure:nth-child(2) {
   animation-delay: 6s;
@@ -1068,10 +1070,10 @@ link:focus,
   }
   3% {
     animation-timing-function: ease-out;
-    opacity: .75;
+    opacity: 1;
   }
   18% {
-    opacity: .75
+    opacity: 1
 
   }
   28% {
@@ -1083,3 +1085,4 @@ link:focus,
 }
 
 /*0,8,17,25,100*/
+
