@@ -582,7 +582,8 @@ textarea.form-control {
 }
 
 .nav-item {
-  margin: 0 15px;
+  /* margin: 0 10px; */
+  margin-right: 20px;
   position: relative;
 }
 
@@ -672,7 +673,7 @@ link:focus,
   background: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .navbar .dropdown-menu {
     display: none;
     opacity: 1;
@@ -688,7 +689,7 @@ link:focus,
   visibility: hidden;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .navbar .dropdown-menu.show {
     visibility: visible;
     display: block;
@@ -703,7 +704,7 @@ link:focus,
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .navbar .dropdown-item {
     text-align: center;
   }
