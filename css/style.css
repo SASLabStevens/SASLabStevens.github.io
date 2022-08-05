@@ -1052,7 +1052,7 @@ link:focus,
   background-image: url('../images/slideshow/sasdroneB.gif');
 }
 .crossfade > figure:nth-child(3) {
-  animation-delay: 8s;
+  animation-delay: 4s;
   background-image: url('../images/slideshow/Stevens.jpg');
 }
 .crossfade > figure:nth-child(3) {
