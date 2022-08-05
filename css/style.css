@@ -1055,7 +1055,7 @@ link:focus,
   animation-delay: 4s;
   background-image: url('../images/slideshow/Stevens.jpg');
 }
-.crossfade > figure:nth-child(3) {
+.crossfade > figure:nth-child(4) {
   animation-delay: 8s;
   background-image: url('../images/slideshow/banner.jpg');
 }
