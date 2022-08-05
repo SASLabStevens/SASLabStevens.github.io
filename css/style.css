@@ -1045,18 +1045,19 @@ link:focus,
 
 
 .crossfade > figure:nth-child(1) {
+  animation-delay: 4s;
   background-image: url('../images/slideshow/tellosFull.gif');
 }
 .crossfade > figure:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 8s;
   background-image: url('../images/slideshow/sasdroneB.gif');
 }
 .crossfade > figure:nth-child(3) {
-  animation-delay: 8s;
+  animation-delay: 12s;
   background-image: url('../images/slideshow/Stevens.jpg');
 }
 .crossfade > figure:nth-child(4) {
-  animation-delay: 12s;
+  animation-delay: 16s;
   background-image: url('../images/slideshow/banner.jpg');
 }
 /* .crossfade > figure:nth-child(5) {
