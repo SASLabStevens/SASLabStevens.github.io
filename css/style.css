@@ -1027,7 +1027,7 @@ link:focus,
 
 
 .crossfade > figure {
-  animation: imageAnimation 12s linear infinite 0s;
+  animation: imageAnimation 16s linear infinite 0s;
   backface-visibility: visible; /*# hidden */
   background-size: cover;
   /* background-color: rgba(201, 76, 76, 0.3):  */
