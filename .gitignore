@@ -1,2 +1,5 @@
-
-images/banner/.DS_Store
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
